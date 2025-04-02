@@ -18,3 +18,5 @@ In this lab project we will create two virtual machines within Microsoft Azure, 
 
 - Windows 10
 - Ubuntu 24.04
+
+<h2>Project Steps</h2>
