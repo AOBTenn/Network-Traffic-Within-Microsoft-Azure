@@ -1,5 +1,6 @@
 # Network Traffic Within Microsoft Azure
 
+![image](https://github.com/user-attachments/assets/1a55355f-47ff-4c8d-8694-624efc5844fe)
 
 <h2>Description</h2>
 In this lab project we will create two virtual machines (Vm) within Microsoft Azure, a network between both Vms, and monitor network traffic with software called Wireshark. 
