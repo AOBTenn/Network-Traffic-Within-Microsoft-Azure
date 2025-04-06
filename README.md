@@ -1,12 +1,12 @@
-# Network Traffic Within Microsoft Azure
+0# Network Traffic Within Microsoft Azure
 
-![image](https://github.com/user-attachments/assets/1a55355f-47ff-4c8d-8694-624efc5844fe)
+!00[image](https://github.com/user-attachments/assets/1a55355f-47ff-4c8d-8694-624efc5844fe)
 
 <h2>Description</h2>
 In this lab project we will create two virtual machines (Vm) within Microsoft Azure, a network between both Vms, and monitor network traffic with software called Wireshark. 
 
 
-<h2>Environments and Utilities Used</h2>
+<h2>Environments and Util000000ities Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop Connection 
@@ -29,7 +29,8 @@ Create -> Select Resource Group -> Enter Name -> Select Region -> Review and Cre
  <p> 
 </p>
 
-2. Create First Virtual Machine (Vm)
+2. Create First Virtual Machine (Vm)\`
+3. 
  <p> 
 </p>
 
@@ -45,3 +46,24 @@ Create -> Put in Resource Group (previously created) -> Enter (Vm) Name "Linux-V
  <p> 
 </p>
 
+4. Login to Windows 10 Vm
+
+Vm in Azure -> Click Windows 10 Vm -> Copy Public Ip Address -> Remote Desktop -> Enter Ip Address -> Enter Username/Password -> Connect/Enter
+
+5. Install Wireshark 
+
+In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 64bit Installer -> Open -> Double Click to Run -> Yes -> No -> Next Several Times -> Check "Install NoCap 1.79" -> Next Several Times -> Agree -> Install -> Next -> Finish
+
+6. Run Wireshark
+
+In Windows 10 Vm -> Search bar -> Type "Wireshark" -> click to Run -> Click Ethernet to hylight -> Click blue Shark fin Icon -> Observe traffic capture
+
+7. Filter ICMP "ping" Traffic
+
+In Windows 10 Vm -> In Wireshark -> In Search bar -> Type "ICMP" -> enter
+
+Wireshark will now filter our all other network/port traffic execpt IMCP "ping" traffic
+
+8. Ping Linux Vm from windows 10 Vm
+
+Get Linux Vm Private Ip Address
