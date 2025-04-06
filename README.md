@@ -67,3 +67,21 @@ Wireshark will now filter our all other network/port traffic execpt IMCP "ping" 
 8. Ping Linux Vm from windows 10 Vm
 
 Get Linux Vm Private Ip Address
+
+Vm in Azure -> Click Linux Vm -> Copy orm Notem Private Ip Address
+
+In Windows 10 Vm -> Rt Click Start -> Run Powershell -> Type ping, spacem, Linux Private Ip Address -> Enter
+
+9. Observe results of ping
+
+If done correctly you can see the IMCP traffic filtered in Wireshark. You will see a request and a reply in both Wireshark and Powershell.
+
+Now we are going to configure the Linux Vm virtual firewall and observe it's effects on network traffic.
+
+10. Start a continuous ping (windows 10 Vm to Linux Vm)
+
+In Windows 10 Vm -> Powershell -> Type ping, space, Linux Private Ip Address, space, -t (will make non-stop ping) -> Enter
+
+11. Observe results of continuous ping
+
+12. Configure Linux Vm virtual firewall
