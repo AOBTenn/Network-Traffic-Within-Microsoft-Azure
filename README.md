@@ -6,7 +6,7 @@
 In this lab project we will create two virtual machines (Vm) within Microsoft Azure, a network between both Vms, and monitor network traffic with software called Wireshark. 
 
 
-<h2>Environments and Util000000ities Used</h2>
+<h2>Environments and Utilities Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop Connection 
