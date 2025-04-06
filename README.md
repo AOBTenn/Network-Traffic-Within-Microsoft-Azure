@@ -85,3 +85,17 @@ In Windows 10 Vm -> Powershell -> Type ping, space, Linux Private Ip Address, sp
 11. Observe results of continuous ping
 
 12. Configure Linux Vm virtual firewall
+
+Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Security Group -> Settings -> Inbound Security Rules -> Add -> Source: Any -> Source Port: * -> Destination: Any -> Destination Port: * -> Protocal: ICMP v4 -> Action: Deny -> Priority: 290 (Enter number lower than current lowest rule to supersede prior rules) -> Add
+
+13. Observe Ping traffic as firewall configuration takes effect
+
+In Powershell the request will time out while in Wireshark there will be a spream of "no response" after a "request in." This shows that the new rule took effect and the firewall is blocking the traffic to the Linux Vm.
+
+14. Re-enable Linux Vm Firewall
+
+Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Security Group -> Settings -> Inbound Security Rules -> Delete Rule 290 (or highest priorty)
+
+15. Observe Ping traffic as firewall configuration takes effect
+
+In Powershell there will be a spream of "replys" while in Wireshark there will be a spream of "Request" and "reply." This shows that once the new rule deletion took effect the firewall stopped blocking the traffic to the Linux Vm.
