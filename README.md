@@ -99,3 +99,23 @@ Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Secur
 15. Observe Ping traffic as firewall configuration takes effect
 
 In Powershell there will be a spream of "replys" while in Wireshark there will be a spream of "Request" and "reply." This shows that once the new rule deletion took effect the firewall stopped blocking the traffic to the Linux Vm.
+
+16. Stop ping and Capture
+
+In powershell -> Press Contral c -> Wireshark -> Stop botton
+
+17. Filter SSH Traffic
+
+In Windows 10 Vm -> In Wireshark -> In Search bar -> Type SSH -> enter -> Start New Capture
+
+Wireshark will now filter our all other network/port traffic execpt SSH traffic
+
+Ibn Powershell -> Type ssh space labuser@ "<"Linux Vm private Ip Address ">" -> enter
+
+18. Observe SSh Traffic
+
+Continue Connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell id prompt change
+
+In Powershell -> Type "Exit" -> Enter -> Observe the Capture in Wireshark
+
+19. Filter for DHCP Traffic
