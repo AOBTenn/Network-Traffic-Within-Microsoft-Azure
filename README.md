@@ -77,7 +77,7 @@ In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 
 ![image](https://github.com/user-attachments/assets/4cb6254a-d8c7-4da3-8f10-0d63838cbdd0)
 ![image](https://github.com/user-attachments/assets/17167834-218b-4d04-8e73-796dfdbd05b7)
 ![image](https://github.com/user-attachments/assets/84415ce4-8a84-4e07-ad73-9d38e7dacc3b)
-![image](https://github.com/user-attachments/assets/1efbcf75-ac08-4798-b337-f41d5ceeddb5)
+![image](https://github.com/user-attachments/assets/32b57392-45f1-4af5-864a-78a87a549e51)
 ![image](https://github.com/user-attachments/assets/0ef2e5f9-cef0-4533-9639-d6f9767eddcb)
 ![image](https://github.com/user-attachments/assets/67969353-a792-45c6-ad7c-a1a1cd8c077c)
 
@@ -85,31 +85,48 @@ In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 
 
 In Windows 10 Vm -> Search bar -> Type "Wireshark" -> Click to Run -> Click Ethernet to highlight -> Click Blue Shark Fin Icon -> Observe Traffic Capture
 
+![image](https://github.com/user-attachments/assets/9e135ca1-b3a7-488f-bc47-92a32b3d092f)
+![image](https://github.com/user-attachments/assets/3a81e08a-b138-4bf3-8434-897b10f87aff)
+![image](https://github.com/user-attachments/assets/d8350aed-6222-4f36-9c91-01b474692dfd)
+
 7. Filter ICMP "ping" Traffic
 
 In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type "ICMP" -> Enter
 
+![image](https://github.com/user-attachments/assets/e0e3780f-2ba5-4902-84c3-320d30c903da)
+
 Wireshark will now filter our all other network/port traffic execpt IMCP "ping" traffic
 
-8. Ping Linux Vm from windows 10 Vm
-
-Get Linux Vm Private Ip Address
+8. Get Linux Vm Private Ip Address
 
 Vm in Azure -> Click Linux Vm -> Copy or Note Private Ip Address
 
+![image](https://github.com/user-attachments/assets/fd1ef944-f69a-410f-8906-48b8de0f99f2)
+
+9. Ping Linux Vm from windows 10 Vm
+
 In Windows 10 Vm -> Rt Click Start -> Run Powershell -> Type "ping, space, Linux Private Ip Address" -> Enter
 
-9. Observe Results of Ping
+![image](https://github.com/user-attachments/assets/c36c99c2-7509-4668-8af5-56ca7275a3c2)
+![image](https://github.com/user-attachments/assets/c2cc7ea6-1e6a-44f5-a5a7-380731fdbdf0)
+
+Observe Results of Ping
+
+![image](https://github.com/user-attachments/assets/1ef12e45-a02a-4ec9-9cfe-2f1a2f4915f7)
 
 If done correctly you can see the IMCP traffic filtered in Wireshark. You will see a request and a reply in both Wireshark and Powershell.
 
 Now we are going to configure the Linux Vm virtual firewall and observe it's effects on network traffic.
 
-10. Start a Continuous Ping (windows 10 Vm to Linux Vm)
+11. Start a Continuous Ping (windows 10 Vm to Linux Vm)
 
-In Windows 10 Vm -> Powershell -> Type "ping, space, Linux Private Ip Address, space, -t" (will make non-stop ping) -> Enter
+In Windows 10 Vm -> Powershell -> Type "ping, space, Linux Private Ip Address, space, -t" (will make non-stop ping) -> Enter -> Restart Capture
 
-11. Observe results of Continuous Ping
+![image](https://github.com/user-attachments/assets/564df52e-0bac-4898-a7d7-d1f10dbe7c8c)
+
+Observe results of Continuous Ping
+
+![image](https://github.com/user-attachments/assets/63d4ddd9-36e2-466a-9a67-5482f26fc1ee)
 
 12. Configure Linux Vm Virtual Firewall
 
