@@ -102,7 +102,7 @@ In Powershell there will be a spream of "replys" while in Wireshark there will b
 
 16. Stop ping and Capture
 
-In powershell -> Press Contral c -> Wireshark -> Stop botton
+In Powershell -> Press Contral c -> Wireshark -> Stop botton
 
 17. Filter SSH Traffic
 
@@ -110,7 +110,7 @@ In Windows 10 Vm -> In Wireshark -> In Search bar -> Type SSH -> enter -> Start 
 
 Wireshark will now filter our all other network/port traffic execpt SSH traffic
 
-Ibn Powershell -> Type ssh space labuser@ "<"Linux Vm private Ip Address ">" -> enter
+In Powershell -> Type ssh space labuser@ "<" Linux Vm private Ip Address ">" -> enter
 
 18. Observe SSh Traffic
 
@@ -118,4 +118,37 @@ Continue Connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wiresha
 
 In Powershell -> Type "Exit" -> Enter -> Observe the Capture in Wireshark
 
-19. Filter for DHCP Traffic
+19. Open Powershell as Admin
+
+In Windows 10 Vm -> Search Bar -> Type "Powershell" -> Click Run as Administrator
+
+20. Create mini Script
+
+In Windows 10 Vm -> In Notepad -> Type "ipconfig space /release" and "ipconfig space /renew" -> Save to c:\programdata -> Name Script: "dhcp.bat"
+
+21. Check Directory for Script/ Change Directory in Powershell
+
+In Windows 10 Vm -> Open File Explorer -> Browse to c:\programdata -> Search for Script: "dhcp.bat"
+
+22. Filter for DHCP Traffic
+
+In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dhcp -> Enter -> Restart Capture
+
+23. Run Script / Observe DHCP Capture
+
+In Windows 10 Vm -> In Powershell -> Type "./dhcp.bat" -> Enter
+
+24. Filter for DNS Traffic
+
+In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dns -> Enter -> Restart Capture
+
+In Powershell -> Type "nslookup space www.disney.com" -> Enter -> Observe Wireshark & Powershell
+
+In Powershell -> Type "nslookup space www.pixar.com" -> Enter -> Observe Wireshark & Powershell
+
+25. Filter RDP Traffic
+
+In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type "tcp.port == 3389" -> Enter -> Restart Capture -> Observe Wireshark Capture
+
+The Capture should be very active and no apparent change because Remote Desktop is already running and sending data packes through port 3389.
+
