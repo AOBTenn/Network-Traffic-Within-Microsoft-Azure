@@ -30,7 +30,6 @@ Create -> Select Resource Group -> Enter Name -> Select Region -> Review and Cre
 </p>
 
 2. Create First Virtual Machine (Vm)\`
-3. 
  <p> 
 </p>
 
@@ -56,11 +55,11 @@ In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 
 
 6. Run Wireshark
 
-In Windows 10 Vm -> Search bar -> Type "Wireshark" -> click to Run -> Click Ethernet to hylight -> Click blue Shark fin Icon -> Observe traffic capture
+In Windows 10 Vm -> Search bar -> Type "Wireshark" -> Click to Run -> Click Ethernet to highlight -> Click Blue Shark Fin Icon -> Observe Traffic Capture
 
 7. Filter ICMP "ping" Traffic
 
-In Windows 10 Vm -> In Wireshark -> In Search bar -> Type "ICMP" -> enter
+In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type "ICMP" -> Enter
 
 Wireshark will now filter our all other network/port traffic execpt IMCP "ping" traffic
 
@@ -68,53 +67,53 @@ Wireshark will now filter our all other network/port traffic execpt IMCP "ping" 
 
 Get Linux Vm Private Ip Address
 
-Vm in Azure -> Click Linux Vm -> Copy orm Notem Private Ip Address
+Vm in Azure -> Click Linux Vm -> Copy or Note Private Ip Address
 
-In Windows 10 Vm -> Rt Click Start -> Run Powershell -> Type ping, spacem, Linux Private Ip Address -> Enter
+In Windows 10 Vm -> Rt Click Start -> Run Powershell -> Type "ping, space, Linux Private Ip Address" -> Enter
 
-9. Observe results of ping
+9. Observe Results of Ping
 
 If done correctly you can see the IMCP traffic filtered in Wireshark. You will see a request and a reply in both Wireshark and Powershell.
 
 Now we are going to configure the Linux Vm virtual firewall and observe it's effects on network traffic.
 
-10. Start a continuous ping (windows 10 Vm to Linux Vm)
+10. Start a Continuous Ping (windows 10 Vm to Linux Vm)
 
-In Windows 10 Vm -> Powershell -> Type ping, space, Linux Private Ip Address, space, -t (will make non-stop ping) -> Enter
+In Windows 10 Vm -> Powershell -> Type "ping, space, Linux Private Ip Address, space, -t" (will make non-stop ping) -> Enter
 
-11. Observe results of continuous ping
+11. Observe results of Continuous Ping
 
-12. Configure Linux Vm virtual firewall
+12. Configure Linux Vm Virtual Firewall
 
-Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Security Group -> Settings -> Inbound Security Rules -> Add -> Source: Any -> Source Port: * -> Destination: Any -> Destination Port: * -> Protocal: ICMP v4 -> Action: Deny -> Priority: 290 (Enter number lower than current lowest rule to supersede prior rules) -> Add
+Vm in Azure -> Click Linux Vm -> Networking -> Network Settings -> Network Security Group -> Settings -> Inbound Security Rules -> Add -> Source: Any -> Source Port: * -> Destination: Any -> Destination Port: * -> Protocal: ICMP v4 -> Action: Deny -> Priority: 290 (Enter number lower than current lowest rule to supersede prior rules) -> Add
 
-13. Observe Ping traffic as firewall configuration takes effect
+13. Observe Ping Traffic as firewall configuration takes effect
 
 In Powershell the request will time out while in Wireshark there will be a spream of "no response" after a "request in." This shows that the new rule took effect and the firewall is blocking the traffic to the Linux Vm.
 
-14. Re-enable Linux Vm Firewall
+14. Disable Linux Vm Firewall Configuration
 
 Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Security Group -> Settings -> Inbound Security Rules -> Delete Rule 290 (or highest priorty)
 
-15. Observe Ping traffic as firewall configuration takes effect
+15. Observe Ping Traffic as firewall configuration takes effect
 
 In Powershell there will be a spream of "replys" while in Wireshark there will be a spream of "Request" and "reply." This shows that once the new rule deletion took effect the firewall stopped blocking the traffic to the Linux Vm.
 
-16. Stop ping and Capture
+16. Stop Ping and Capture
 
-In Powershell -> Press Contral c -> Wireshark -> Stop botton
+In Powershell -> Press Contral C (on keyboard) -> Wireshark -> Stop Botton
 
 17. Filter SSH Traffic
 
-In Windows 10 Vm -> In Wireshark -> In Search bar -> Type SSH -> enter -> Start New Capture
+In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type SSH -> Enter -> Start New Capture
 
 Wireshark will now filter our all other network/port traffic execpt SSH traffic
 
-In Powershell -> Type ssh space labuser@ "<" Linux Vm private Ip Address ">" -> enter
+In Powershell -> Type ssh space labuser@ "<" Linux Vm private Ip Address ">" -> Enter
 
 18. Observe SSh Traffic
 
-Continue Connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell id prompt change
+Continue connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> Type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell Id prompt change
 
 In Powershell -> Type "Exit" -> Enter -> Observe the Capture in Wireshark
 
@@ -122,7 +121,7 @@ In Powershell -> Type "Exit" -> Enter -> Observe the Capture in Wireshark
 
 In Windows 10 Vm -> Search Bar -> Type "Powershell" -> Click Run as Administrator
 
-20. Create mini Script
+20. Create Mini Script
 
 In Windows 10 Vm -> In Notepad -> Type "ipconfig space /release" and "ipconfig space /renew" -> Save to c:\programdata -> Name Script: "dhcp.bat"
 
