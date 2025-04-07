@@ -194,21 +194,42 @@ In Powershell -> Type "Exit" -> Enter
 
 In Windows 10 Vm -> Search Bar -> Type "Powershell" -> Click Run as Administrator
 
+![image](https://github.com/user-attachments/assets/9e8fe5f5-bbab-4bd0-85c5-3c440d730dd3)
+
 20. Create Mini Script
 
-In Windows 10 Vm -> In Notepad -> Type "ipconfig space /release" and "ipconfig space /renew" -> Save to c:\programdata -> Name Script: "dhcp.bat"
+In Windows 10 Vm -> In Notepad -> Type "ipconfig space /release" and "ipconfig space /renew" -> Save to c:\programdata -> Name Script: "dhcp.bat" -> Save as Type: All Files
 
-21. Check Directory for Script/ Change Directory in Powershell
+![image](https://github.com/user-attachments/assets/2cd6cb2d-7d63-4c6b-8fad-ac3bd5441cd1)
+![image](https://github.com/user-attachments/assets/a7d7565e-179f-4d3b-8350-2fb82c728ced)
+![image](https://github.com/user-attachments/assets/fc4f56fc-eff0-4fff-b171-83dd8966a9ca)
 
-In Windows 10 Vm -> Open File Explorer -> Browse to c:\programdata -> Search for Script: "dhcp.bat"
+21. Change Directory / Check Directory for Script In Powershell
+
+In Windows 10 Vm -> In Powershell -> Type c:\programdata -> Enter -> Type "ls" -> Enter -> Search for Script
+
+![image](https://github.com/user-attachments/assets/2deeb404-cd69-4bd3-b5ff-acb6f6b4cb2b)
+![image](https://github.com/user-attachments/assets/d804d5ad-bd47-4c19-860e-68b47b9262d2)
+![image](https://github.com/user-attachments/assets/ebeea24e-818b-45f6-a091-a7eb6eb12d02)
 
 22. Filter for DHCP Traffic
 
 In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dhcp -> Enter -> Restart Capture
 
-23. Run Script / Observe DHCP Capture
+![image](https://github.com/user-attachments/assets/37704b45-f5f3-4b9a-bb1e-49a1e3e1c749)
+![image](https://github.com/user-attachments/assets/439083c5-5bc1-4998-9902-434c9f9632f7)
+
+23. Run Script
 
 In Windows 10 Vm -> In Powershell -> Type "./dhcp.bat" -> Enter
+
+![image](https://github.com/user-attachments/assets/6cfb2daa-5417-4466-a1fc-d5df4b1bbcc9)
+![image](https://github.com/user-attachments/assets/64a9d2c5-93ac-45cc-affc-d36511fc7ed0)
+![image](https://github.com/user-attachments/assets/b6ab549e-ce27-41b4-9225-037e150da488)
+
+Observe DHCP Capture
+
+![image](https://github.com/user-attachments/assets/9068d342-972a-4276-87ef-1bb1e6ec8a2e)
 
 24. Filter for DNS Traffic
 
