@@ -123,6 +123,7 @@ Now we are going to configure the Linux Vm virtual firewall and observe it's eff
 In Windows 10 Vm -> Powershell -> Type "ping, space, Linux Private Ip Address, space, -t" (will make non-stop ping) -> Enter -> Restart Capture
 
 ![image](https://github.com/user-attachments/assets/564df52e-0bac-4898-a7d7-d1f10dbe7c8c)
+![image](https://github.com/user-attachments/assets/7c631696-0d4b-4b97-b1c3-8dd0204179bd)
 
 Observe results of Continuous Ping
 
@@ -132,7 +133,14 @@ Observe results of Continuous Ping
 
 Vm in Azure -> Click Linux Vm -> Networking -> Network Settings -> Network Security Group -> Settings -> Inbound Security Rules -> Add -> Source: Any -> Source Port: * -> Destination: Any -> Destination Port: * -> Protocal: ICMP v4 -> Action: Deny -> Priority: 290 (Enter number lower than current lowest rule to supersede prior rules) -> Add
 
-13. Observe Ping Traffic as firewall configuration takes effect
+![image](https://github.com/user-attachments/assets/e1e727f5-8f26-441d-9b46-b3ccf9cd6b81)
+![image](https://github.com/user-attachments/assets/14be74eb-7820-406f-bd80-e69a73b6d746)
+![image](https://github.com/user-attachments/assets/d807c796-8e31-4ade-8394-c0465ed7009a)
+![image](https://github.com/user-attachments/assets/3653d393-839d-4158-8076-408bf917b046)
+
+Observe Ping Traffic as firewall configuration takes effect
+
+![image](https://github.com/user-attachments/assets/49e4cfc9-1909-4c20-a0b4-11301de3e37a)
 
 In Powershell the request will time out while in Wireshark there will be a spream of "no response" after a "request in." This shows that the new rule took effect and the firewall is blocking the traffic to the Linux Vm.
 
