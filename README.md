@@ -29,21 +29,36 @@ Create -> Select Resource Group -> Enter Name -> Select Region -> Review and Cre
  <p> 
 </p>
 
-2. Create First Virtual Machine (Vm)\`
+![image](https://github.com/user-attachments/assets/591345cf-2814-4826-b416-b0f0c9ed2394)
+![image](https://github.com/user-attachments/assets/aaacfdfd-0cb8-4d7b-86dd-1fd8a7f5f45b)
+
+2. Create First Virtual Machine (Vm)
  <p> 
 </p>
 
-Create -> Put in Resource Group (previously created) -> Enter (Vm) Name "Windows-Vm" -> Select Region (same as before) -> Select Image: Windows 10 Pro Version 22H2 -> *Note* Size: Standard, 2vcpus, 8 gib memory -> Username/Password -> Check "License" -> Next to Disk -> Next to Networking -> Under Virtual Network Select "Create VNet" -> Enter VNet Name -> Ok -> Review and Create -> Create
+In Azure -> Create -> Put in Resource Group (previously created) -> Enter (Vm) Name "Windows 10-Vm" -> Select Region (same as before) -> Select Image: Windows 10 Pro Version 22H2 -> *Note* Size: Standard, 2vcpus, 8 gib memory -> Username/Password -> Check "License" -> Next to Disk -> Next to Networking -> Under Virtual Network Select "Create VNet" -> Enter VNet Name -> Ok -> Review and Create -> Create
  <p> 
 </p>
+
+![image](https://github.com/user-attachments/assets/5da39162-3ff6-4714-83b6-198386b051c1)
+![image](https://github.com/user-attachments/assets/6201f944-0ab0-41c2-87f1-b7f7b3a9c5c4)
+![image](https://github.com/user-attachments/assets/36311c98-460d-4d88-9647-8b8e3d0754a6)
+![image](https://github.com/user-attachments/assets/7031961d-d012-45bc-8e94-d08ddcae6e1a)
+![image](https://github.com/user-attachments/assets/e367e8b4-fcb2-41fa-ac06-e24f27b15141)
+![image](https://github.com/user-attachments/assets/430fdd6f-29cd-4d43-bec0-4a279770c8ac)
 
 3. Create Second Virtual Machine (Vm) 
  <p> 
 </p>
 
-Create -> Put in Resource Group (previously created) -> Enter (Vm) Name "Linux-Vm" -> Select Region (same as before) -> Select Image: Ubuntu Server 22.04 -> *Note* Size: Standard, 2vcpus, 8 gib memory -> Username/Password -> Next to Disk -> Next to Networking-> Select VNet (previously created) -> Review and Create -> Create
+In Azure -> Create -> Put in Resource Group (previously created) -> Enter (Vm) Name "Linux-Vm" -> Select Region (same as before) -> Select Image: Ubuntu Server 22.04 -> *Note* Size: Standard, 2vcpus, 8 gib memory -> Username/Password -> Next to Disk -> Next to Networking-> Select VNet (previously created) -> Review and Create -> Create
  <p> 
 </p>
+
+![image](https://github.com/user-attachments/assets/4b2c4157-5d8b-4071-8e97-f6b93405d67c)
+![image](https://github.com/user-attachments/assets/82671356-ad53-42fd-8498-dbf65e4cb48b)
+![image](https://github.com/user-attachments/assets/81adecf9-3569-4947-9df8-99ae389171f7)
+![image](https://github.com/user-attachments/assets/19025de5-2358-4179-8ed1-2e59ff1f11da)
 
 4. Login to Windows 10 Vm
 
