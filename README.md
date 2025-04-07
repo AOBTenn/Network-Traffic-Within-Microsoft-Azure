@@ -182,6 +182,10 @@ Observe SSh Traffic
 
 Continue connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> Type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell Id prompt change
 
+![image](https://github.com/user-attachments/assets/6e6313be-99a4-4403-83c7-583a38c173c8)
+![image](https://github.com/user-attachments/assets/53084fbd-1d5c-45da-9222-ca35b6e2bd4c)
+![image](https://github.com/user-attachments/assets/36cc0f6c-2033-4897-b8e4-322aa6c2a9b0)
+
 In Powershell -> Type "Exit" -> Enter 
 
 ![image](https://github.com/user-attachments/assets/54a6b2c6-e7d5-47ac-8591-a91bac1c3e0f)
