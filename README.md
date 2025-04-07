@@ -148,27 +148,43 @@ In Powershell the request will time out while in Wireshark there will be a sprea
 
 Vm in Azure -> Click Linux Vm -> Networking -> Network settings -> Network Security Group -> Settings -> Inbound Security Rules -> Delete Rule 290 (or highest priorty)
 
-15. Observe Ping Traffic as firewall configuration takes effect
+![image](https://github.com/user-attachments/assets/644af004-7ef0-4071-9c82-06cf8885bc02)
+![image](https://github.com/user-attachments/assets/4f9066a5-37e0-4813-aae3-6dc78ce01b3a)
+
+Observe Ping Traffic as firewall configuration takes effect
 
 In Powershell there will be a spream of "replys" while in Wireshark there will be a spream of "Request" and "reply." This shows that once the new rule deletion took effect the firewall stopped blocking the traffic to the Linux Vm.
 
+![image](https://github.com/user-attachments/assets/6e7491ea-52ed-41c4-8152-986fdd2c25a0)
+
 16. Stop Ping and Capture
 
-In Powershell -> Press Contral C (on keyboard) -> Wireshark -> Stop Botton
+In Powershell -> Press Contral C (on keyboard) -> Wireshark -> Red Stop Button
+
+![image](https://github.com/user-attachments/assets/8dd66784-2975-419c-8200-8356be2e991d)
 
 17. Filter SSH Traffic
 
 In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type SSH -> Enter -> Start New Capture
 
+![image](https://github.com/user-attachments/assets/26f48f53-e241-45bf-8b83-55d227bbd110)
+![image](https://github.com/user-attachments/assets/1687447a-3bfa-4576-8d6a-6a1006964b0d)
+
 Wireshark will now filter our all other network/port traffic execpt SSH traffic
+
+18. Run SSH in Powershell
 
 In Powershell -> Type ssh space labuser@ "<" Linux Vm private Ip Address ">" -> Enter
 
-18. Observe SSh Traffic
+![image](https://github.com/user-attachments/assets/5d80dd3f-1915-4f61-9708-1a063948015f)
+
+Observe SSh Traffic
 
 Continue connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> Type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell Id prompt change
 
-In Powershell -> Type "Exit" -> Enter -> Observe the Capture in Wireshark
+In Powershell -> Type "Exit" -> Enter 
+
+![image](https://github.com/user-attachments/assets/54a6b2c6-e7d5-47ac-8591-a91bac1c3e0f)
 
 19. Open Powershell as Admin
 
