@@ -69,7 +69,14 @@ Vm in Azure -> Click Windows 10 Vm -> Copy Public Ip Address -> Remote Desktop -
 
 5. Install Wireshark 
 
-In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 64bit Installer -> Open -> Double Click to Run -> Yes -> No -> Next Several Times -> Check "Install NoCap 1.79" -> Next Several Times -> Agree -> Install -> Next -> Finish
+In Windows 10 Vm -> Browse to Wireshark.org -> Click Download -> Select Windows 64bit Installer -> Double Click to Run -> Yes -> No -> Next Several Times -> Check "Install NpCap 1.79" -> Next Several Times -> Agree -> Install -> Next -> Finish
+
+![image](https://github.com/user-attachments/assets/4eada9c4-22bc-4cb1-ac34-22f416308b3d)
+![image](https://github.com/user-attachments/assets/242ae70b-0fa1-490c-a9c0-548e9d9892df)
+![image](https://github.com/user-attachments/assets/a107a723-0028-4892-bdc9-085900d29892)
+![image](https://github.com/user-attachments/assets/4cb6254a-d8c7-4da3-8f10-0d63838cbdd0)
+![image](https://github.com/user-attachments/assets/17167834-218b-4d04-8e73-796dfdbd05b7)
+![image](https://github.com/user-attachments/assets/84415ce4-8a84-4e07-ad73-9d38e7dacc3b)
 
 6. Run Wireshark
 
