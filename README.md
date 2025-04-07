@@ -142,7 +142,7 @@ Observe Ping Traffic as firewall configuration takes effect
 
 ![image](https://github.com/user-attachments/assets/49e4cfc9-1909-4c20-a0b4-11301de3e37a)
 
-In Powershell the request will time out while in Wireshark there will be a spream of "no response" after a "request in." This shows that the new rule took effect and the firewall is blocking the traffic to the Linux Vm.
+In Powershell the request will time out while in Wireshark there will be a spream of "no response found" after a "request in." This shows that the new rule took effect and the firewall is blocking the traffic to the Linux Vm.
 
 14. Disable Linux Vm Firewall Configuration
 
@@ -234,6 +234,9 @@ Observe DHCP Capture
 24. Filter for DNS Traffic
 
 In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dns -> Enter -> Restart Capture
+
+![image](https://github.com/user-attachments/assets/82e6d28f-5966-4039-9313-b5d91586c11d)
+![image](https://github.com/user-attachments/assets/a58a7f58-b785-4ff6-89aa-2fa0ec57f56e)
 
 In Powershell -> Type "nslookup space www.disney.com" -> Enter -> Observe Wireshark & Powershell
 
