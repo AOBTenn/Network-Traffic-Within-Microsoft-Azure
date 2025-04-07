@@ -237,14 +237,24 @@ In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dns -> Enter -> Restart
 
 ![image](https://github.com/user-attachments/assets/82e6d28f-5966-4039-9313-b5d91586c11d)
 ![image](https://github.com/user-attachments/assets/a58a7f58-b785-4ff6-89aa-2fa0ec57f56e)
+![image](https://github.com/user-attachments/assets/c04b466b-a30c-4313-8229-039ebd4b7c29)
 
 In Powershell -> Type "nslookup space www.disney.com" -> Enter -> Observe Wireshark & Powershell
 
+![image](https://github.com/user-attachments/assets/67cbd147-ceb5-4380-9398-1d143d7c442a)
+
 In Powershell -> Type "nslookup space www.pixar.com" -> Enter -> Observe Wireshark & Powershell
+
+![image](https://github.com/user-attachments/assets/963a32ad-04f7-44e1-8394-7248369f6b6d)
 
 25. Filter RDP Traffic
 
 In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type "tcp.port == 3389" -> Enter -> Restart Capture -> Observe Wireshark Capture
 
+![image](https://github.com/user-attachments/assets/cb4dddc3-5b94-4dd5-890f-a5986b1d39c5)
+![image](https://github.com/user-attachments/assets/2148ec41-0299-4ea7-9b0b-c8641f2f52fe)
+![image](https://github.com/user-attachments/assets/98221f3a-6eaf-46be-b30d-825190e25f77)
+
 The Capture should be very active and no apparent change because Remote Desktop is already running and sending data packes through port 3389.
 
+Congratulations on successfully reaching the end of the Networking lab project in Microsoft Azure. You should now have developed a small intuitoin on the background workings of a computer in a network environment. feel free to practe this lab as many times as necessary for a more complete understanding.
