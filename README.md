@@ -177,7 +177,7 @@ In Windows 10 Vm -> Search bar -> Type "Wireshark" -> Click to Run -> Click Ethe
 <p> 
 </p>
 
-In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type "ICMP" -> Enter
+In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type "imcp" -> Enter
 <p> 
 </p>
 
@@ -337,7 +337,7 @@ In Powershell -> Press Contral C (on keyboard) -> Wireshark -> Red Stop Button
 <p> 
 </p>
 
-In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type SSH -> Enter -> Start New Capture
+In Windows 10 Vm -> In Wireshark -> In Search Bar -> Type "ssh" -> Enter -> Start New Capture
 <p> 
 </p>
 
@@ -357,7 +357,7 @@ Wireshark will now filter our all other network/port traffic execpt SSH traffic
 <p> 
 </p>
 
-In Powershell -> Type ssh space labuser@ "<" Linux Vm private Ip Address ">" -> Enter
+In Powershell -> Type "ssh space labuser@ "<" Linux Vm private Ip Address ">" -> Enter
 <p> 
 </p>
 
@@ -369,7 +369,7 @@ Observe SSh Traffic
 <p> 
 </p>
 
-Continue connectin (In Powershell) -> Yes -> Enter -> Observe Capture is Wireshark -> Type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell Id prompt change
+Continue connectin (In Powershell) -> Yes -> Enter -> Observe capture in Wireshark -> Type password for Linux Vm (In Powershell) -> Observe more traffic -> Observe Powershell Id prompt change
 <p> 
 </p>
 
@@ -449,7 +449,7 @@ In Windows 10 Vm -> In Powershell -> Type c:\programdata -> Enter -> Type "ls" -
 <p> 
 </p>
 
-In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dhcp -> Enter -> Restart Capture
+In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type "dhcp" -> Enter -> Restart Capture
 <p> 
 </p>
 
@@ -493,7 +493,7 @@ Observe DHCP Capture
 <p> 
 </p>
 
-In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type dns -> Enter -> Restart Capture
+In Windows 10 Vm -> In Wireshark -> Clear Filter -> Type "dns" -> Enter -> Restart Capture
 <p> 
 </p>
 
