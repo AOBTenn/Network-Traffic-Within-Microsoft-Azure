@@ -1,4 +1,4 @@
-# Network Traffic Within Microsoft Azure
+# Exploring Network Traffic Within Microsoft Azure
 
 ![image](https://github.com/user-attachments/assets/1b409f85-58eb-49c7-af18-890bba03dae9)
 
